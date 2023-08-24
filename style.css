@@ -1,0 +1,74 @@
+* {
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: wheat;
+    font-family: 'Fredoka', sans-serif;
+}
+
+header {
+    background-color: #FFF;
+    align-items: center;
+    height: 72px;
+
+    display: flex;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+}
+
+#logo {
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+    transform: scale(0.7);
+}
+
+ul{    
+    display: flex;
+    gap: 64px;
+    list-style: none;
+    cursor: pointer;
+    align-items: center;
+    font-family: 'Fredoka', sans-serif;
+    color: #662D41;
+    font-size: 1.7rem;
+}
+
+ul li:hover {
+    font-weight: bold;
+}
+
+#page {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    color: #662D41;
+    font-size: 4rem;
+    height: 100vh;
+}
+
+#page h1 {
+    margin: 30.6rem 0 4rem 6.6rem;
+}
+
+button {
+    background-color: #662D41;
+    border: none;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+    color: #FFF;
+    padding: 3rem 10rem;
+    border-radius: 7.5rem;
+    font-size: 3rem;
+    margin-left: 32.9rem;
+    cursor: pointer;
+}
+
+
