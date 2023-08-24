@@ -9,66 +9,109 @@
 }
 
 body {
-    background-color: wheat;
+
     font-family: 'Fredoka', sans-serif;
 }
 
 header {
     background-color: #FFF;
     align-items: center;
-    height: 72px;
+    height: 98px;
+    width: 100%;
+    padding: 0 7.5rem;
 
     display: flex;
     justify-content: space-between;
 
     box-sizing: border-box;
+
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #logo {
     margin: none;
     padding: none;
-    box-sizing: border-box;
-    transform: scale(0.7);
 }
 
 ul{    
     display: flex;
     gap: 64px;
     list-style: none;
-    cursor: pointer;
+    
     align-items: center;
     font-family: 'Fredoka', sans-serif;
     color: #662D41;
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 ul li:hover {
-    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(60, 1, 1, 0.5);
+    cursor: pointer;
 }
 
-#page {
+.page {
     font-family: 'Fredoka', sans-serif;
     font-weight: 700;
     color: #662D41;
     font-size: 4rem;
-    height: 100vh;
 }
 
-#page h1 {
-    margin: 30.6rem 0 4rem 6.6rem;
+.page::before {
+    content: '';
+    background-image: url('./assets/gelato.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#textButton {
+    width: 89.6rem;
+    height: 214rem;
+
+    margin: 30.6rem 0 0 6.6rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textButton span {
+    margin-left: 5px;
 }
 
 button {
-    background-color: #662D41;
     border: none;
+    
+    padding: 2rem 6rem;
+    width: 33.2rem;
+    
+    background-color: #662D41;
+    color: #FFF;
     font-family: 'Fredoka', sans-serif;
     font-weight: 400;
-    color: #FFF;
-    padding: 3rem 10rem;
     border-radius: 7.5rem;
-    font-size: 3rem;
-    margin-left: 32.9rem;
+    font-size: 4rem;
+    
     cursor: pointer;
+
 }
 
+button:hover {
+    background-color: #562537;
+}
 
+#separator {
+    background-color: rgb(149, 15, 15);
+    height: 5.5rem;
+}
+
+.history {
+    background-color: #662D41;
+}
