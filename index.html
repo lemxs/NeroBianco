@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -40,9 +41,9 @@
             </a>  
             <nav>
                 <ul>
-                    <li><a href="#history"> História</a></li>
-                    <li><a href="#cards"> Cardápio</a></li>
-                    <li>Delivery</li>
+                    <li> História</li>
+                    <li> Cardápio</li>
+                    <li> Delivery</li>
                     <li>Encontrar loja</li>
                 </ul>
             </nav>
@@ -98,6 +99,47 @@
             </div>
         </div>
         </section>
+
+        <section id="event-subscription">
+            <div id="disclaimer">
+              <h2>NeroBianco</h2>
+              <p class="about-event">
+                A verdadeira experiência do gelatto tradicional.
+              </p>
+            </div>
+            <div id="subscription-form">
+              <p>Preencha o formulário para fazer parte do nosso serviço de assinatura mensal.</p>
+              <form>
+                <div class="form-group">
+                  <label for="name">Nome</label>
+                  <input type="text" id="nome" placeholder="Digite seu nome" required/>
+                </div>
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input type="email" placeholder="Digite seu melhor e-mail" required/>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Telefone</label>
+                  <input type="text" placeholder="Número de Whatsapp" required/>
+                </div>
+                <div class="form-group">
+                  <label for="interest">Linha de interesse</label>
+                  <select name="interest" id="interest" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="1">Plano Premium</option>
+                    <option value="2">Plano Tradizionales</option>
+                    <option value="3">Plano Tazza</option>
+                    <option value="4">Plano Caffè</option>
+                  </select>
+                </div>
+                <input type="submit" class="btn" value="Fazer parte!" />
+              </form>
+            </div>
+            <div class="resposta-form">
+                <p id="resposta"></p>
+            </div>
+          </section>
+        
 
 
 </body>
