@@ -1,28 +1,47 @@
+let nome = document.querySelector("#nome")
+const plano = document.querySelector("#interest")
+const resposta = document.querySelector("#resposta")
+const qtdPotes = document.querySelector("#qtd_potes")
+const buttonSubmit = document.querySelector("#btn")
+const resultado = document.querySelector("output")
 
 
-const nome = window.document.getElementById("nome").value
-const plano = window.document.getElementById("interest").value
-const resposta = window.document.getElementById("resposta").value
+qtdPotes.addEventListener("input", function () {
+    const labelPotes = document.querySelector("label[for='qtd_potes']")
+    if (qtdPotes.value == 1){
+    labelPotes.innerHTML = `Quantidade: ${qtdPotes.value} pote por mês`
+    } else {
+    labelPotes.innerHTML = `Quantidade: ${qtdPotes.value} potes por mês`
+    }   
+    calcular()
+})
 
-plano.addEventListener("change", function(){
+plano.addEventListener("change", calcular)
 
-    let mens = ""
+function calcular(){
+    const planoSelecionado = parseInt(plano.value)
 
-    switch(plano){
+    switch(planoSelecionado) {
         case 1: 
-        mens = "Plano Premium"
+        valor = 50
         break;
         case 2: 
-        mens = "Plano Tradizionales"
+        valor = 30
         break;
         case 3:
-        mens = " Plano Tazza"
+        valor = 20
         break;
-        case 4:
-        mens = "Plano Caffè consis"
-        break;
+        default: 
+        valor = 0
     }
-    
-    mens = `Olá ${nome} você escolheu o plano de assinatura ${mens}`
-    resposta.innerText = mens
-});
+
+    let taxa= 1 + qtdPotes.value * 0.5
+    valor *= 1 + taxa
+   
+    resposta.innerText = `Valor do plano: R$${valor}`
+}
+
+buttonSubmit.addEventListener("click", function(event){
+    event.preventDefault()
+    event.getElementById("form").submit()
+})
