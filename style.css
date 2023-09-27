@@ -11,6 +11,8 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    width: 100%;
+    background-color: #562537;
 }
 
 body {
@@ -78,8 +80,8 @@ ul li:hover {
     content: '';
     background-image: url('./assets/gelato.jpg');
     background-size:cover;
-    height: 100%;
-    width: 100%;
+    height: 103%;
+    width: 105%;
     display: block;
     position:absolute;
     left: 0;
@@ -127,7 +129,6 @@ ul li:hover {
 }
 
 .separator {
-    margin-top: 10px;
     background-color:#ffffff;
     height: 5.5rem;
     width: 100vw;
@@ -248,7 +249,8 @@ ul li:hover {
     background: #562537;
     background-position: center;
     background-size: cover;
-    height: 85vh;
+    height: 100vh;
+    width: 110%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -356,7 +358,54 @@ ul li:hover {
 
 /*Localization*/
 
-.localization {
-    height: 100vh;
-    
+#map {
+    height: 50vh;
+    width: 103%;
+    background-color: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 5rem 15rem;
+
+    font-size: 3rem;
+    margin: 0;
+
 }
+
+#map h1 {
+    color: #562537;
+}
+/*Footer*/
+
+footer {
+    background-color: #562537;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6rem;
+    gap: 2rem;
+    width: 100vw;
+    height: 110%;
+
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+}
+
+footer li {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+footer li:hover{
+    color: #eead2d;
+}
+
+footer img {
+    filter: invert(50%) sepia(10%) saturate(3800%) hue-rotate(354deg) brightness(150%) contrast(83%);
+    scale: 60%;
+}
+
+
